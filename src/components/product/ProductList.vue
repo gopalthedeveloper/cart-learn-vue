@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ProductGrid :products="products"></ProductGrid>
+    <ProductGrid :products="products" class="list-container"></ProductGrid>
     <div class="cart-content">
       <CartView class="listCart"></CartView>
     </div>
@@ -36,6 +36,9 @@ export default {
 </script>
 
 <style>
+.list-container{
+  margin-bottom: 60px;
+}
 .product {
   border-bottom: 1px solid #635c92;
   font-family: Arial, Helvetica, sans-serif;
