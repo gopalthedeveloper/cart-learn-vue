@@ -62,5 +62,7 @@ export const updateCartProduct = (state, product) => {
 }
 export const emptyCart = (state) => {
   Vue.set(state.cart, "products", {});
+  calculateCartTotal(state);
+  countCartItems(state);
   return 1;
 }
